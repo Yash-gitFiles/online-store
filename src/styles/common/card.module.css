@@ -1,0 +1,29 @@
+.container {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 300px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.container .imgContainer {
+  height: 300px;
+  width: 280px;
+}
+
+.imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btn {
+  position: absolute;
+  right: 15%;
+  top: 3%;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
