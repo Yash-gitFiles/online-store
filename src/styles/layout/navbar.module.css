@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e11b23;
+  padding: 10px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.logoContainer {
+  font-size: 25px;
+  padding: 0px 30px;
+  color: #fff;
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 16px;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+
+.categoryContainer > ul {
+  display: flex;
+  gap: 16px;
+}
+
+li a {
+  display: flex;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
