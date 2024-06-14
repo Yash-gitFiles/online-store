@@ -5,8 +5,6 @@
   align-items: center;
 }
 
-/* nav inner first container */
-
 .navInnerFirstContainer {
   display: flex;
   gap: 10px;
@@ -88,60 +86,6 @@
   display: block;
 }
 
-/* sneakers */
-
-.sneakers button {
-  background-color: #f0f0f0;
-  padding: 16px;
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
-}
-
-.sneakers button a {
-  text-decoration: none;
-  color: black;
-}
-/* theme */
-
-.dropbtnTheme {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdownTheme {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdownContentTheme {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 210px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border: 1px solid black;
-}
-
-.dropdownContentTheme a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdownContentTheme a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdownTheme:hover .dropdownContentTheme {
-  display: block;
-}
-
-/* nav inner second container */
 .navInnerSecondContainer {
   display: flex;
   gap: 8px;

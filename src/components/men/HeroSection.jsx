@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "../../styles/men/heroSection.module.css";
 import Slider from "react-slick";
 
-function HeroSection() {
+function HeroSection({ img1, img2, img3, img4, img5, img6, img7, img8, img9 }) {
   var settings = {
     // ======== simple slider =======
     dots: false,
@@ -20,22 +20,22 @@ function HeroSection() {
   return (
     <Slider {...settings}>
       <div className={styles.mainContainer}>
-        <img
-          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Polo-799-homepage.jpg?format=webp&w=1500&dpr=1.3"
-          alt="img1"
-        />
+        <img src={img1} alt="img1" />
       </div>
       <div className={styles.mainContainer}>
-        <img
-          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Plaid-Shirts-Offer-Campaign_HomePage-Banner_1.jpg?format=webp&w=1500&dpr=1.3"
-          alt="img2"
-        />
+        <img src={img2} alt="img2" />
       </div>
       <div className={styles.mainContainer}>
-        <img
-          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_banner_oversized_t-shirt_bif_vive_big_print.jpg?format=webp&w=1500&dpr=1.3"
-          alt="img3"
-        />
+        <img src={img3} alt="img3" />
+      </div>
+      <div className={styles.mainContainer}>
+        <img src={img4} alt="img3" />
+      </div>
+      <div className={styles.mainContainer}>
+        <img src={img5} alt="img3" />
+      </div>
+      <div className={styles.mainContainer}>
+        <img src={img6} alt="img3" />
       </div>
     </Slider>
   );

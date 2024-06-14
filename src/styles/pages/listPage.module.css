@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 1fr 3fr;
   background-color: #fdfdfd;
   padding: 16px;
 }
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .sidebarContainer .removeBtn {
@@ -63,3 +63,15 @@
 }
 
 /* card  */
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+@media screen and (max-width: 910px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}

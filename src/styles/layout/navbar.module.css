@@ -20,14 +20,21 @@
   cursor: pointer;
 }
 
-.categoryContainer > ul {
+.categoryContainer {
   display: flex;
-  gap: 16px;
+  gap: 32px;
 }
 
 li a {
   display: flex;
   color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+li a:hover {
+  text-decoration: underline;
 }
 
 li {

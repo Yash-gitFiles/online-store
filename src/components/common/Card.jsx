@@ -1,20 +1,29 @@
 import React from "react";
 import styles from "../../styles/common/card.module.css";
+import { useNavigate } from "react-router-dom";
 
-function Card() {
+function Card({ value }) {
+  // console.log("value", value);
+
+  const navigate = useNavigate();
+  function handleDetails() {
+    navigate("detailsPage");
+  }
+
+  if (!value) return null;
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={handleDetails}>
       <div className={styles.imgContainer}>
-        <img
-          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1688207565_6170618.jpg?format=webp&w=480&dpr=1.3"
-          alt=""
-        />
+        <img src={value.imageURL1} alt="" className={styles.url1} />
+        <img src={value.imageURL2} alt="" className={styles.url2} />
       </div>
       <div className={styles.descContainer}>
-        <h3>Rick And Morty: Morty Universe</h3>
-        <p>Oversized t-shirts</p>
-        <p>₹ 899</p>
-        <p>MRP incl. if all taxes</p>
+        <h3>{value.title}</h3>
+        <div>
+          <p>{value.desc}</p>
+          <p>₹ {value.price}</p>
+          <p>MRP incl. if all taxes</p>
+        </div>
       </div>
       <button className={styles.btn}>
         <i className="fa-regular fa-heart"></i>
