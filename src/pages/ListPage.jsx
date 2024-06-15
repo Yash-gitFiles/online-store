@@ -9,24 +9,22 @@ import { menProductsData } from "../data/men";
 function ListPage() {
   const param = useParams();
   const link = useLocation();
-  console.log("param", param, link);
+  console.log("param", param);
+  console.log("link", link);
 
   let data = link.pathname.includes("women")
     ? womenProductsData.filter((v) => {
         return v.categories === param.id;
       })
-    : link.pathname.includes("men")
-    ? menProductsData.filter((v) => {
+    : link.pathname.includes("kids")
+    ? kids.filter((v) => {
         return v.categories === param.id;
       })
-    : kids.filter((v) => {
+    : menProductsData.filter((v) => {
         return v.categories === param.id;
       });
-  // const women = womenProductsData.filter((v) => {
-  //   return v.categories === param.id;
-  // });
 
-  // console.log("data", data);
+  console.log("data", data);
 
   return (
     <>

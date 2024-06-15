@@ -18,7 +18,9 @@ function WomenNavbar() {
             <Link to="oversizedTshirt">Oversized t-shirts</Link>
 
             <Link to="shirt">Shirts</Link>
+            <Link to="sweetShirts">Sweet Shirts</Link>
             <Link to="tops">Tops</Link>
+            <Link to="hoodies">Hoodies</Link>
             <Link to="jackets">Jackets</Link>
             <Link to="dresses">Dresses</Link>
           </div>
@@ -33,9 +35,24 @@ function WomenNavbar() {
             </span>
           </button>
           <div className={styles.dropdownContentBottomWear}>
-            <Link to="allBottoms">All Bottoms</Link>
-            <Link to="cargoAndJoggers">Cargo & Joggers</Link>
+            {/* <Link to="allBottoms">All Bottoms</Link> */}
+            {/* <Link to="cargoAndJoggers">Cargo & Joggers</Link> */}
             <Link to="jeans">Jeans</Link>
+          </div>
+        </div>
+
+        {/*  full sets */}
+        <div className={styles.dropdownBottomWear}>
+          <button className={styles.dropbtnBottomWear}>
+            FULL SETS&nbsp;&nbsp;&nbsp;
+            <span>
+              <i className="fa-solid fa-chevron-down"></i>
+            </span>
+          </button>
+          <div className={styles.dropdownContentBottomWear}>
+            <Link to="coOrdSets">Co Ord Sets</Link>
+            {/* <Link to="cargoAndJoggers">Cargo & Joggers</Link> */}
+            <Link to="sneakers">Sneakers</Link>
           </div>
         </div>
       </div>

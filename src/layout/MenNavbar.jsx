@@ -20,9 +20,12 @@ function MenNavbar() {
             <Link to="oversizedTshirt">Oversized t-shirts</Link>
             <Link to="tshirt">T-shirt</Link>
             <Link to="shirt">Shirts</Link>
-            <Link to="jakets">Jakets</Link>
+            <Link to="jackets">Jakets</Link>
             <Link to="hoodies">Hoodies</Link>
-            <Link to="sweatshits">Sweatshits</Link>
+            <Link to="sweatShrits">Sweat-Shirts</Link>
+            <Link to="polos">Polos</Link>
+            <Link to="supimaPolos">Supima Polo</Link>
+            <Link to="fullSleeveTshirt">Full Sleece T-shirt</Link>
           </div>
         </div>
 
@@ -35,7 +38,7 @@ function MenNavbar() {
             </span>
           </button>
           <div className={styles.dropdownContentBottomWear}>
-            <Link to="cargoPants">Cargo pants</Link>
+            {/* <Link to="cargoPants">Cargo pants</Link> */}
             <Link to="jeans">Jeans</Link>
             <Link to="joggers">Joggers</Link>
             <Link to="shorts">Shorts</Link>
