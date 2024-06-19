@@ -5,6 +5,11 @@
   padding: 10px;
   align-items: center;
   font-size: 14px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .logoContainer {
@@ -39,4 +44,62 @@ li a:hover {
 
 li {
   list-style-type: none;
+}
+
+.bars {
+  display: none;
+  font-size: 1.35rem;
+  color: white;
+  cursor: pointer;
+}
+
+.categoryContainer li button {
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 650px) {
+  .bars {
+    display: flex;
+  }
+
+  .categoryContainer {
+    position: fixed;
+    top: 53px;
+    left: 50%;
+    right: 0;
+    flex-direction: column;
+    padding: 0px;
+    gap: 8px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 600ms ease;
+    background-color: #e11b23;
+    /* border-radius: 16px; */
+  }
+
+  .categoryContainer li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categoryContainer li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 16px;
+  }
+
+  .visible {
+    height: 280px;
+    width: 310px;
+  }
 }

@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "../../styles/men/heroSection.module.css";
 import Slider from "react-slick";
 
-function HeroSection({ img1, img2, img3, img4, img5, img6, img7, img8, img9 }) {
+function HeroSection({ img1, img2, img3 }) {
   var settings = {
     // ======== simple slider =======
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 5000,
     autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -27,15 +27,6 @@ function HeroSection({ img1, img2, img3, img4, img5, img6, img7, img8, img9 }) {
       </div>
       <div className={styles.mainContainer}>
         <img src={img3} alt="img3" />
-      </div>
-      <div className={styles.mainContainer}>
-        <img src={img4} alt="img4" />
-      </div>
-      <div className={styles.mainContainer}>
-        <img src={img5} alt="img5" />
-      </div>
-      <div className={styles.mainContainer}>
-        <img src={img6} alt="img6" />
       </div>
     </Slider>
   );

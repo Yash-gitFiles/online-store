@@ -76,9 +76,6 @@ function KidsNavbar() {
         <li>
           <i className="fa-solid fa-cart-shopping"></i>
         </li>
-        <li>
-          <button className={styles.btn}>LogOut</button>
-        </li>
       </ul>
     </div>
   );

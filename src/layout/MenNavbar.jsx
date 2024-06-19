@@ -1,8 +1,18 @@
 import React from "react";
 import styles from "../styles/men/men.module.css";
 import { Link } from "react-router-dom";
+// import { signOut } from "firebase/auth";
+// import { auth } from "../services/firebaServices";
 
 function MenNavbar() {
+  // async function handleLogout() {
+  //   try {
+  //     await signOut(auth);
+  //     localStorage.removeItem("user");
+  //   } catch (error) {
+  //     console.log("error", error);
+  //   }
+  // }
   return (
     <div className={styles.navContainer}>
       {/* first */}
@@ -82,9 +92,6 @@ function MenNavbar() {
         </li>
         <li>
           <i className="fa-solid fa-cart-shopping"></i>
-        </li>
-        <li>
-          <button className={styles.btn}>LogOut</button>
         </li>
       </ul>
     </div>
